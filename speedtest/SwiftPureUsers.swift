@@ -22,7 +22,7 @@ func parseArray(data: String) -> [Dictionary<String,String>]? {
     return nil;
 }
 
-class SiwftPureUsers {
+class SwiftPureUsers {
     private var users = [SwiftPureUser]()
 
     init(string: String) {
