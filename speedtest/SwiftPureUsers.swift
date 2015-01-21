@@ -9,17 +9,17 @@ class SwiftPureUser {
     var name: String?
     var handle: String?
 
-    init(data: Dictionary<String,String>?) {
+    init(data: JSValue?) {
         if let d = data {
-            name = d["name"]
-            handle = d["handle"]
+            name = d["name"].string
+            handle = d["handle"].string
         }
     }
 }
 
-func parseArray(data: String) -> [Dictionary<String,String>]? {
-    
-    return nil;
+func parseArray(data: String) -> JSValue? {
+
+    return JSValue.parse(data).value
 }
 
 class SwiftPureUsers {
@@ -27,9 +27,11 @@ class SwiftPureUsers {
 
     init(string: String) {
         if let raw_array = parseArray(string) {
-            for raw_user in raw_array {
-                let user = SwiftPureUser(data: raw_user)
-                users.append(user)
+            if let jsArray = raw_array.array {
+                for jsUser in jsArray {
+                    let user = SwiftPureUser(data: jsUser)
+                    users.append(user)
+                }
             }
         }
     }
