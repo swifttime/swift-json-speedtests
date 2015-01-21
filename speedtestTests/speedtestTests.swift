@@ -40,7 +40,22 @@ class speedtestTests: XCTestCase {
             }
         }
     }
-    
+
+    func testPureSwiftUsers() {
+        if let json_string = self.loadJsonString() {
+            let store = SwiftPureUsers(string: json_string)
+            XCTAssertEqual(store.count, 8200, "Unexpected number of users decoded.")
+        }
+    }
+
+    func testPureSwiftUsersPerformance() {
+        if let json_string = self.loadJsonString() {
+            self.measureBlock() {
+                let store = SwiftPureUsers(string: json_string)
+            }
+        }
+    }
+
     func testObjCUsers() {
         if let json_string = self.loadJsonString() {
             let store = ObjCUsers(json_string)

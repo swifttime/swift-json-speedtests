@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3568D33EC1B15FACED5C1CE7 /* SwiftPureUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568DB78870810CB2074F12D /* SwiftPureUsers.swift */; };
+		3568DD8BA848723740D9293A /* SwiftPureUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568DB78870810CB2074F12D /* SwiftPureUsers.swift */; };
 		BB3E3B761A38AB81002C5C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E3B751A38AB81002C5C9A /* AppDelegate.swift */; };
 		BB3E3B781A38AB81002C5C9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3E3B771A38AB81002C5C9A /* ViewController.swift */; };
 		BB3E3B7B1A38AB81002C5C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3E3B791A38AB81002C5C9A /* Main.storyboard */; };
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3568DB78870810CB2074F12D /* SwiftPureUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPureUsers.swift; sourceTree = "<group>"; };
 		BB3E3B701A38AB81002C5C9A /* speedtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speedtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3E3B741A38AB81002C5C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB3E3B751A38AB81002C5C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 				BB5C31E31A38F8BA00CC6A93 /* ObjCUsers.m */,
 				BB5C31E11A38F8B900CC6A93 /* speedtest-Bridging-Header.h */,
 				BB5C31E21A38F8B900CC6A93 /* speedtestTests-Bridging-Header.h */,
+				3568DB78870810CB2074F12D /* SwiftPureUsers.swift */,
 			);
 			path = speedtest;
 			sourceTree = "<group>";
@@ -244,6 +248,7 @@
 				BB3E3B781A38AB81002C5C9A /* ViewController.swift in Sources */,
 				BB3E3B761A38AB81002C5C9A /* AppDelegate.swift in Sources */,
 				BB5C31E41A38F8BA00CC6A93 /* ObjCUsers.m in Sources */,
+				3568D33EC1B15FACED5C1CE7 /* SwiftPureUsers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +261,7 @@
 				BB5C31D91A38CF5700CC6A93 /* JSONHelper.swift in Sources */,
 				BB5C31DF1A38EF7000CC6A93 /* SwiftJSONHelperUsers.swift in Sources */,
 				BB5C31DA1A38CF5700CC6A93 /* SwiftUsers.swift in Sources */,
+				3568DD8BA848723740D9293A /* SwiftPureUsers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
