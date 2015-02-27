@@ -1,6 +1,6 @@
 //
 // Created by Rick Windham on 1/20/15.
-// Copyright (c) 2015 David Wagner. All rights reserved.
+// Copyright (c) 2015 Rick Windham. All rights reserved.
 //
 
 import Foundation

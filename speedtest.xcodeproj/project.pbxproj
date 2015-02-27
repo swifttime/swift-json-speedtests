@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA69A4B1AA1056D008BA2F8 /* speedtestJSCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA69A4A1AA1056D008BA2F8 /* speedtestJSCTests.swift */; };
+		1DA69A4F1AA10646008BA2F8 /* SwiftJSCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA69A3F1AA10165008BA2F8 /* SwiftJSCore.swift */; };
 		1DEFBD0B1A6F71B400FDA366 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEFBD011A6F71B400FDA366 /* Error.swift */; };
 		1DEFBD0C1A6F71B400FDA366 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEFBD011A6F71B400FDA366 /* Error.swift */; };
 		1DEFBD0D1A6F71B400FDA366 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEFBD021A6F71B400FDA366 /* Functional.swift */; };
@@ -47,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1DA69A501AA10C42008BA2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB3E3B681A38AB81002C5C9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3E3B6F1A38AB81002C5C9A;
+			remoteInfo = speedtest;
+		};
 		BB3E3B861A38AB81002C5C9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB3E3B681A38AB81002C5C9A /* Project object */;
@@ -57,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DA69A3F1AA10165008BA2F8 /* SwiftJSCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJSCore.swift; sourceTree = "<group>"; };
+		1DA69A461AA1056D008BA2F8 /* speedtestJSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speedtestJSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA69A491AA1056D008BA2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA69A4A1AA1056D008BA2F8 /* speedtestJSCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speedtestJSCTests.swift; sourceTree = "<group>"; };
 		1DEFBD011A6F71B400FDA366 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		1DEFBD021A6F71B400FDA366 /* Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
 		1DEFBD031A6F71B400FDA366 /* JSValue.Accessors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSValue.Accessors.swift; sourceTree = "<group>"; };
@@ -89,6 +102,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1DA69A431AA1056D008BA2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB3E3B6D1A38AB81002C5C9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,6 +126,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DA69A471AA1056D008BA2F8 /* speedtestJSCTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DA69A4A1AA1056D008BA2F8 /* speedtestJSCTests.swift */,
+				1DA69A481AA1056D008BA2F8 /* Supporting Files */,
+			);
+			path = speedtestJSCTests;
+			sourceTree = "<group>";
+		};
+		1DA69A481AA1056D008BA2F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DA69A491AA1056D008BA2F8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1DEFBD001A6F71B400FDA366 /* json-swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +166,7 @@
 				1DEFBD001A6F71B400FDA366 /* json-swift */,
 				BB3E3B721A38AB81002C5C9A /* speedtest */,
 				BB3E3B881A38AB81002C5C9A /* speedtestTests */,
+				1DA69A471AA1056D008BA2F8 /* speedtestJSCTests */,
 				BB3E3B711A38AB81002C5C9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +176,7 @@
 			children = (
 				BB3E3B701A38AB81002C5C9A /* speedtest.app */,
 				BB3E3B851A38AB81002C5C9A /* speedtestTests.xctest */,
+				1DA69A461AA1056D008BA2F8 /* speedtestJSCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +199,7 @@
 				BB5C31E31A38F8BA00CC6A93 /* ObjCUsers.m */,
 				BB5C31E11A38F8B900CC6A93 /* speedtest-Bridging-Header.h */,
 				BB5C31E21A38F8B900CC6A93 /* speedtestTests-Bridging-Header.h */,
+				1DA69A3F1AA10165008BA2F8 /* SwiftJSCore.swift */,
 			);
 			path = speedtest;
 			sourceTree = "<group>";
@@ -192,6 +232,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1DA69A451AA1056D008BA2F8 /* speedtestJSCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DA69A4C1AA1056D008BA2F8 /* Build configuration list for PBXNativeTarget "speedtestJSCTests" */;
+			buildPhases = (
+				1DA69A421AA1056D008BA2F8 /* Sources */,
+				1DA69A431AA1056D008BA2F8 /* Frameworks */,
+				1DA69A441AA1056D008BA2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DA69A511AA10C42008BA2F8 /* PBXTargetDependency */,
+			);
+			name = speedtestJSCTests;
+			productName = speedtestJSCTests;
+			productReference = 1DA69A461AA1056D008BA2F8 /* speedtestJSCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BB3E3B6F1A38AB81002C5C9A /* speedtest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB3E3B8F1A38AB81002C5C9A /* Build configuration list for PBXNativeTarget "speedtest" */;
@@ -236,6 +294,10 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "David Wagner";
 				TargetAttributes = {
+					1DA69A451AA1056D008BA2F8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = BB3E3B6F1A38AB81002C5C9A;
+					};
 					BB3E3B6F1A38AB81002C5C9A = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -260,11 +322,19 @@
 			targets = (
 				BB3E3B6F1A38AB81002C5C9A /* speedtest */,
 				BB3E3B841A38AB81002C5C9A /* speedtestTests */,
+				1DA69A451AA1056D008BA2F8 /* speedtestJSCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1DA69A441AA1056D008BA2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB3E3B6E1A38AB81002C5C9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +356,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1DA69A421AA1056D008BA2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA69A4B1AA1056D008BA2F8 /* speedtestJSCTests.swift in Sources */,
+				1DA69A4F1AA10646008BA2F8 /* SwiftJSCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB3E3B6C1A38AB81002C5C9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +415,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1DA69A511AA10C42008BA2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB3E3B6F1A38AB81002C5C9A /* speedtest */;
+			targetProxy = 1DA69A501AA10C42008BA2F8 /* PBXContainerItemProxy */;
+		};
 		BB3E3B871A38AB81002C5C9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB3E3B6F1A38AB81002C5C9A /* speedtest */;
@@ -363,6 +447,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1DA69A4D1AA1056D008BA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = speedtestJSCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/speedtest.app/speedtest";
+			};
+			name = Debug;
+		};
+		1DA69A4E1AA1056D008BA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = speedtestJSCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/speedtest.app/speedtest";
+			};
+			name = Release;
+		};
 		BB3E3B8D1A38AB81002C5C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -514,6 +634,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DA69A4C1AA1056D008BA2F8 /* Build configuration list for PBXNativeTarget "speedtestJSCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA69A4D1AA1056D008BA2F8 /* Debug */,
+				1DA69A4E1AA1056D008BA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB3E3B6B1A38AB81002C5C9A /* Build configuration list for PBXProject "speedtest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
